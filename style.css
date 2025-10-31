@@ -894,5 +894,46 @@
       .track-filters { flex-direction: column; align-items: center; }
       .faq-question { font-size: 16px; }
       .judge-card::after { display: none; }
-
     }
+
+/* Devfolio SDK Button Integration */
+.apply-button {
+  margin: 10px auto;
+  display: inline-block !important;
+}
+
+/* Header Devfolio button responsive adjustment */
+@media (max-width: 1024px) {
+  .devfolio-apply-button {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .devfolio-apply-button {
+    width: 100% !important;
+    max-width: 312px;
+    margin: 10px auto;
+  }
+}
+
+/* Hero section Devfolio button */
+.hero .apply-button {
+  transition: transform 0.3s ease;
+}
+
+.hero .apply-button:hover {
+  transform: scale(1.05);
+}
+
+/* Override Devfolio button default styles to match your theme */
+.apply-button iframe {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px rgba(55, 112, 255, 0.4) !important;
+}
+
