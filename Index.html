@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HACKtoLEARN 2025 - Complete Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-label="cursor"></div>
+
+  <!-- Background -->
+  <div class="bg-animation"></div>
+  <canvas class="particles" id="particles" aria-label="particles"></canvas>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">&lt;HACKtoLEARN/&gt;</div>
+    <!-- In the header nav section, replace the existing Devfolio button with: -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#tracks">Tracks</a>
+  <a href="#prizes">Prizes</a>
+  <a href="#teams">Teams</a>
+  <a href="#sponsors">Sponsors</a>
+  <a href="#organizer">Organizers</a>
+  <a href="#judges">Judges</a>
+  <a href="#faq">FAQ</a>
+</nav>
+  </header>
+
+  <!-- Home / Hero -->
+  <section class="hero" id="home">
+    <h1 class="glitch">HACKtoLEARN</h1>
+    <p class="hero-subtitle">29 DECEMBER, 2025 | Virtual & Offline</p>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-item">
+        <div class="countdown-value" id="days">39</div>
+        <div class="countdown-label">DAYS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="hours">00</div>
+        <div class="countdown-label">HOURS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="minutes">00</div>
+        <div class="countdown-label">MINUTES</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="seconds">00</div>
+        <div class="countdown-label">SECONDS</div>
+      </div>
+    </div>
+
+   <!-- In the hero section, keep the apply button as is -->
+<div class="cta-buttons">
+  <div 
+    class="apply-button" 
+    data-hackathon-slug="hacktolearn" 
+    data-button-theme="light"
+    style="height: 60px; width: 312px;"
+  ></div>
+  <a href="https://discord.gg/YezfJSTM" target="_blank">
+    <button class="btn btn-secondary">JOIN DISCORD</button>
+  </a>
+</div>
+
+    <div class="terminal" aria-label="terminal">
+      <div class="terminal-line">&gt; initializing_hackathon...</div>
+      <div class="terminal-line">&gt; loading_challenges...</div>
+      <div class="terminal-line">&gt; connecting_hackers...</div>
+      <div class="terminal-line">&gt; status: READY TO CODE</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <h2 class="section-title glitch" style="margin-bottom: 20px;">ABOUT US</h2>
+
+    <section class="about-content" aria-label="about-us">
+      <h2 class="section-title" style="font-size: 40px; margin-bottom: 20px;">WHAT IS HACKtoLEARN?</h2>
+
+      <div class="about-grid" style="margin-top: 10px;">
+        <div class="about-card">
+          <h3 class="card-title">Our Mission</h3>
+          <p class="card-content">HACKtoLEARN is a global hackathon initiative designed to bridge the gap between theoretical knowledge and practical application. We believe the best way to learn is by doing, and our events provide the perfect platform for developers, designers, and innovators to create, collaborate, and grow.</p>
+        </div>
+        <div class="about-card">
+          <h3 class="card-title">Our Vision</h3>
+          <p class="card-content">We envision a world where every aspiring developer has access to resources, mentorship, and a community that empowers them to turn their ideas into reality. Through our hackathons, workshops, and networking events, we're building the next generation of tech innovators.</p>
+        </div>
+        <div class="about-card">
+          <h3 class="card-title">Who Can Participate?</h3>
+          <p class="card-content">Whether you're a seasoned developer or just starting your coding journey, HACKtoLEARN welcomes participants of all skill levels. Our tracks are designed to challenge beginners and experts alike, with dedicated mentorship to guide you through the process.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Tracks Section -->
+  <section class="tracks-section" id="tracks">
+    <h2 class="section-title glitch">HACKING TRACKS</h2>
+    <p class="hero-subtitle" style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Choose your path to innovation. Each track offers unique challenges and learning opportunities. Whether you're a beginner or an expert, there's a perfect challenge waiting for you.</p>
+    
+    <div class="track-filters">
+      <button class="filter-btn active" data-filter="all">All Tracks</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="ai">AI/ML</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="OI">Open Innovation</button>
+    </div>
+
+    <div class="tracks-grid">
+      <!-- Web Development Track -->
+      <div class="track-card" data-category="web">
+        <div class="track-icon">🌐</div>
+        <h3 class="track-title">Web Development</h3>
+        <p class="track-description">Build innovative web applications that solve real-world problems. Focus on user experience, performance, and modern web technologies.</p>
+        
+        <div class="track-skills">
+          <h4 class="skills-title">SKILLS NEEDED</h4>
+          <div class="skills-list">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">API Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI/ML Track -->
+      <div class="track-card" data-category="ai">
+        <div class="track-icon">🤖</div>
+        <h3 class="track-title">Artificial Intelligence</h3>
+        <p class="track-description">Create intelligent solutions using machine learning, computer vision, or natural language processing. Push the boundaries of what AI can achieve.</p>
+        
+        <div class="track-skills">
+          <h4 class="skills-title">SKILLS NEEDED</h4>
+          <div class="skills-list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">ML Algorithms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Development Track -->
+      <div class="track-card" data-category="mobile">
+        <div class="track-icon">📱</div>
+        <h3 class="track-title">Mobile Development</h3>
+        <p class="track-description">Develop cutting-edge mobile applications for iOS or Android. Focus on performance, usability, and innovative features.</p>
+        
+        <div class="track-skills">
+          <h4 class="skills-title">SKILLS NEEDED</h4>
+          <div class="skills-list">
+            <span class="skill-tag">Swift/Kotlin</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">API Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Innovation Track -->
+      <div class="track-card" data-category="OI">
+        <div class="track-icon">💡</div>
+        <h3 class="track-title">Open Innovation</h3>
+        <p class="track-description">Think outside the box! This track is for groundbreaking ideas that don't fit traditional categories. Bring your most creative and innovative projects.</p>
+        
+        <div class="track-skills">
+          <h4 class="skills-title">SKILLS NEEDED</h4>
+          <div class="skills-list">
+            <span class="skill-tag">Creative Thinking</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Any Technology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prizes Section -->
+  <section class="prizes-section" id="prizes">
+    <h2 class="section-title glitch">🏆 PRIZES & REWARDS</h2>
+    <div class="prizes-grid">
+      <div class="prize-card">
+        <div class="prize-position gold">🥇</div>
+        <h3 class="prize-title">GOLD</h3>
+        <p class="prize-amount">To Be Announced Soon</p>
+      </div>
+      <div class="prize-card">
+        <div class="prize-position silver">🥈</div>
+        <h3 class="prize-title">SILVER</h3>
+        <p class="prize-amount">To Be Announced Soon</p>
+      </div>
+      <div class="prize-card">
+        <div class="prize-position bronze">🥉</div>
+        <h3 class="prize-title">BRONZE</h3>
+        <p class="prize-amount">To Be Announced Soon</p>
+      </div>
+      <div class="prize-card">
+        <div class="prize-position special">👩‍💻</div>
+        <h3 class="prize-title">BEST GIRLS TEAM</h3>
+        <p class="prize-amount">To Be Announced Soon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teams (Home) -->
+  <section class="teams" id="teams">
+    <h2 class="section-title">TOP TEAMS</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">...........</p>
+        <div class="team-score">.........</div>
+      </div>
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">..........</p>
+        <div class="team-score">........</div>
+      </div>
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">........</p>
+        <div class="team-score">........</div>
+      </div>
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">.......</p>
+        <div class="team-score">.......</div>
+      </div>
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">........</p>
+        <div class="team-score">........</div>
+      </div>
+      <div class="team-card">
+        <h3 class="team-name">Waiting for You</h3>
+        <p class="team-project">........</p>
+        <div class="team-score">........</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors (Home) -->
+  <section class="sponsors" id="sponsors">
+    <h2 class="section-title">POWERED BY</h2>
+    <div class="carousel" aria-label="sponsors carousel">
+      <div class="carousel-track">
+        <div class="sponsor-logo">  <img src="image.png" alt="Discord"></div>
+        <div class="sponsor-logo"><img src="devfolio.png" alt="Devfolio"></div>
+        <div class="sponsor-logo"><img src="image copy 2.png" alt="Unstop"></div>
+        <div class="sponsor-logo"><img src="image copy 3.png" alt="Google"></div>
+        <div class="sponsor-logo"><img src="image copy 4.png" alt="ETH"></div>
+        <div class="sponsor-logo"><img src="image copy 5.png" alt="Polygon"></div>
+      </div>
+    </div>
+
+    <div class="cta-buttons" style="justify-content:center; margin-top: 20px;">
+     <a href="mailto:hacktolearn001@gmail.com"><button class="btn btn-primary" aria-label="Become a sponsor">BECOME A SPONSOR</button></a> 
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="about-section">
+    <div class="timeline">
+      <h2 class="section-title" style="margin-top: 40px;">OUR JOURNEY</h2>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">24 OCT 2025</div>
+          <h3>First Event</h3>
+          <p>Launched our Hackthon on Devfolio.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">25 NOV 2025</div>
+          <h3>Registrations begin</h3>
+          <p>Digital gates open for aspiring hackers to join the ultimate coding battlefield. Register, form teams, and prepare for the challenges ahead.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">30 NOV 2025</div>
+          <h3>Registrations end</h3>
+          <p>Final call for digital warriors to join the HACKtoLEARN revolution. Last chance to secure your position among the elite hackers.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">15-20 DEC 2025</div>
+          <h3>Round 1st</h3>
+          <p>Idea Submission </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">29-30 DEC 2025</div>
+          <h3>Online Hackthon Phase</h3>
+          <p>It is a 24 hours online Hackathon in with you can push your code on GitHub Repositories and Submit it .</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">To Be Announced Soon.</div>
+          <h3>Offline Hackthon</h3>
+          <p>The Details will be Announced Soon...... </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">To Be Announced Soon.</div>
+          <h3>Result Compilation</h3>
+          <p>.....</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">To Be Announced Soon.</div>
+          <h3>Result Announcment </h3>
+          <p>.....</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizers Section -->
+<section class="team-section" id="organizer">
+  <h2 class="section-title">ORGANIZERS</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">AG</div>
+      <h3 class="member-name">Aditya Gond</h3>
+      <p class="member-role">President CyberSristi</p>
+      <p class="member-bio">Leading the vision of HACKtoLEARN with expertise in cybersecurity and community building.</p>
+      <div class="member-connect">
+        <a href="https://linktr.ee/adiiys" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="team-member">
+      <div class="member-photo">AC</div>
+      <h3 class="member-name">Amit Chaurasiya</h3>
+      <p class="member-role">Head Organizer</p>
+      <p class="member-bio">Passionate about technology education and creating opportunities for aspiring developers.</p>
+      <div class="member-connect">
+        <a href="https://linktr.ee/I_amit1" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Coordinators Section - Compact Version -->
+<section class="team-section" id="coordinator">
+  <h2 class="section-title">COORDINATORS</h2>
+  
+  <!-- Design Team -->
+  <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Design Team</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">YS</div>
+      <h3 class="member-name">Yashika Sharma</h3>
+      <p class="member-role">Design Lead</p>
+      <p class="member-bio">Creative designer specializing in digital assets.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">RR</div>
+      <h3 class="member-name">Rani Rajput</h3>
+      <p class="member-role">Design Team</p>
+      <p class="member-bio">Expert in Canva, Figma, and Photoshop.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">VK</div>
+      <h3 class="member-name">Vinay Kumar</h3>
+      <p class="member-role">Design Team</p>
+      <p class="member-bio">Ensures timely delivery of design materials.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technical Team -->
+  <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Technical Team</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">AM</div>
+      <h3 class="member-name">Anshu Mishra</h3>
+      <p class="member-role">Technical Coordinator</p>
+      <p class="member-bio">Collaborates with dev teams for smooth execution.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">GG</div>
+      <h3 class="member-name">Gaurav Gupta</h3>
+      <p class="member-role">Technical Coordinator</p>
+      <p class="member-bio">Plans and executes workshops and hackathons.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">AS</div>
+      <h3 class="member-name">Anant Singh</h3>
+      <p class="member-role">Technical Coordinator</p>
+      <p class="member-bio">Builds innovative technical solutions.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Community Managers -->
+  <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Community Managers</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">AS</div>
+      <h3 class="member-name">Ananya Singh</h3>
+      <p class="member-role">Community Manager</p>
+      <p class="member-bio">Leadership and marketing expert.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">VU</div>
+      <h3 class="member-name">Vikram Ustav</h3>
+      <p class="member-role">Community Manager</p>
+      <p class="member-bio">Builds strong student communities.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">VS</div>
+      <h3 class="member-name">Vivek Sahani</h3>
+      <p class="member-role">Community Manager</p>
+      <p class="member-bio">Engages students through social media.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">MS</div>
+      <h3 class="member-name">Mansi Singh</h3>
+      <p class="member-role">Community Manager</p>
+      <p class="member-bio">Collects feedback to enhance participation.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partnership Team -->
+  <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Partnership Team</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">AY</div>
+      <h3 class="member-name">Aditi Yadav</h3>
+      <p class="member-role">Partnership Lead</p>
+      <p class="member-bio">Google Student Ambassador, KIT.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="member-photo">AS</div>
+      <h3 class="member-name">Aditi Singh</h3>
+      <p class="member-role">Partnership Team</p>
+      <p class="member-bio">President of NEC Team, IIT Bombay.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Faculty Section -->
+<section class="judges-section" id="judges">
+  <h2 class="section-title glitch">👨‍🏫FACULTY COORDINATORS</h2>
+  <div class="judges-grid">
+    
+    <div class="judge-card">
+      <div class="judge-photo">TBA</div>
+      <h3 class="judge-name">TBA</h3>
+      <div class="judge-connect">
+        <a href="https://www.linkedin.com/in/eshan-singh04/" target="_blank" class="connect-btn judge-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="judge-card">
+      <div class="judge-photo">TBA</div>
+      <h3 class="judge-name">TBA</h3>
+      
+      <div class="judge-connect">
+        <a href="https://www.linkedin.com/in/eshan-singh04/" target="_blank" class="connect-btn judge-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-photo">TBA</div>
+      <h3 class="judge-name">TBA</h3>
+      <div class="judge-connect">
+        <a href="https://www.linkedin.com/in/eshan-singh04/" target="_blank" class="connect-btn judge-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Judges Section -->
+<section class="judges-section" id="judges">
+  <h2 class="section-title glitch">⚖️ ESTEEMED JUDGES</h2>
+  <div class="judges-grid">
+    
+    <div class="judge-card">
+      <div class="judge-photo">ES</div>
+      <h3 class="judge-name">Eshan Singh</h3>
+      <p class="judge-designation">Speaker | DevOps Engineer</p>
+      <p class="judge-company">DEF-X Cyber Research Lab</p>
+      <div class="judge-expertise">
+        <span class="expertise-tag">AI/ML</span>
+        <span class="expertise-tag">Cloud Computing</span>
+        <span class="expertise-tag">Blockchain</span>
+        <span class="expertise-tag">DevOps</span>
+        <span class="expertise-tag">System Design</span>
+      </div>
+      <div class="judge-connect">
+        <a href="https://linkedin.com/in/eshansingh" target="_blank" class="connect-btn judge-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="judge-card">
+      <div class="judge-photo">TBA</div>
+      <h3 class="judge-name">TBA</h3>
+      
+      <div class="judge-connect">
+        <a href="https://www.linkedin.com/in/eshan-singh04/" target="_blank" class="connect-btn judge-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <h2 class="section-title glitch">💬 FREQUENTLY ASKED QUESTIONS</h2>
+    <div class="faq-item">
+      <div class="faq-question">Who can participate in HACKtoLEARN?</div>
+      <div class="faq-answer">Anyone passionate about learning and innovation can join HACKtoLEARN! We welcome students, professionals, and hobbyists from all backgrounds and skill levels.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is there a registration fee?</div>
+      <div class="faq-answer">No! HACKtoLEARN is absolutely free to participate. We believe in making hackathons accessible to everyone who wants to learn and create.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Do I need a team to participate?</div>
+      <div class="faq-answer">You can join solo or form a team of up to 4 members. If you're looking for teammates, join our Discord server where you can connect with other participants.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What are the prizes?</div>
+      <div class="faq-answer">Exciting cash rewards, exclusive goodies, internship opportunities, and certificates await the winners! We also have special prizes for different categories including Best Girls Team.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What could be the size of the team?</div>
+      <div class="faq-answer">We're looking for groups of 1–4 heroes. Solo adventurers are welcome — or gather your buddies and hack together! Teams can be formed before or during the event.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Will there be mentorship available?</div>
+      <div class="faq-answer">Yes! We have industry experts and experienced developers who will be available throughout the hackathon to guide you, answer questions, and help you overcome technical challenges.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What should I bring to the hackathon?</div>
+      <div class="faq-answer">For virtual participants: A laptop, stable internet connection, and lots of enthusiasm! For offline participants: Additionally bring chargers, personal items, and an open mind ready to learn.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can beginners participate?</div>
+      <div class="faq-answer">Absolutely! HACKtoLEARN is designed for all skill levels. We have beginner-friendly tracks, workshops, and mentors specifically to help newcomers get started with their first hackathon project.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Developed by Team-HTL || HACK-NOW</p>
+    <div class="social-links" aria-label="social links">
+      <a href="mailto:hacktolearn001@gmail.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="https://discord.gg/YezfJSTM">Discord</a>
+    </div>
+    <p style="margin-top: 20px; color: #666;">&copy; 2025 HACKtoLEARN. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Custom Cursor
+    (function(){
+      const cursor = document.querySelector('.cursor');
+      let mouseX = 0, mouseY = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // trail
+        const trail = document.createElement('div');
+        trail.className = 'cursor-trail';
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 600);
+      });
+
+      function updateCursor() {
+        cursor.style.left = mouseX - 10 + 'px';
+        cursor.style.top = mouseY - 10 + 'px';
+        requestAnimationFrame(updateCursor);
+      }
+      updateCursor();
+
+      // Button hover effects (cursor scale)
+      document.querySelectorAll('.btn, .faq-item, .judge-card').forEach(elem => {
+        elem.addEventListener('mouseenter', () => {
+          cursor.style.transform = 'scale(2)';
+        });
+        elem.addEventListener('mouseleave', () => {
+          cursor.style.transform = 'scale(1)';
+        });
+      });
+      cursor.style.transform = 'scale(1)';
+    })();
+
+    // Particle Background
+    (function(){
+      const canvas = document.getElementById('particles');
+      const ctx = canvas.getContext('2d');
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      const particles = [];
+      const particleCount = 120;
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.6,
+          vy: (Math.random() - 0.5) * 0.6,
+          radius: Math.random() * 2
+        });
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#00ffff';
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fill();
+        });
+        requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+    })();
+
+    // Countdown (to 22 November 2025)
+    (function(){
+      const targetDate = new Date('2025-11-22T00:00:00').getTime();
+
+      function updateCountdown() {
+        const now = Date.now();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        const ds = String(days).padStart(2, '0');
+        const hs = String(hours).padStart(2, '0');
+        const ms = String(minutes).padStart(2, '0');
+        const ss = String(seconds).padStart(2, '0');
+
+        document.getElementById('days').textContent = ds;
+        document.getElementById('hours').textContent = hs;
+        document.getElementById('minutes').textContent = ms;
+        document.getElementById('seconds').textContent = ss;
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    })();
+
+    // Track Filtering
+    (function(){
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const trackCards = document.querySelectorAll('.track-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          trackCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+
+    // FAQ Toggle
+    (function(){
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+    })();
+
+    // Smooth scrolling for navigation links
+    (function(){
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          if(targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    })();
+
+    // Reveal animations on scroll
+    (function(){
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.team-member, .judge-card, .prize-card, .faq-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+      });
+    })();
+
+    // Fallback for Devfolio SDK
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const applyButtons = document.querySelectorAll('.apply-button');
+    applyButtons.forEach(button => {
+      if (!button.querySelector('iframe')) {
+        // SDK didn't load, show fallback button
+        button.innerHTML = `
+          <a href="https://devfolio.co/discover" target="_blank">
+            <button class="btn btn-primary">Apply with Devfolio</button>
+          </a>
+        `;
+      }
+    });
+  }, 3000);
+});
+    
+  </script>
+</body>
+</html>
