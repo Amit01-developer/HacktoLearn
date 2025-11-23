@@ -6,14 +6,13 @@
   <title>HACKtoLEARN - Complete Platform</title>
   <link rel="stylesheet" href="style.css">
 
- <script>
+  <script>
     window.devfolioConfig = {
       buttonSelector: '#devfolio-apply-now',
       key: 'hack-to-learn', // Replace with your hackathon key
     };
   </script>
   <script src="https://apply.devfolio.co/v2/sdk.js" async defer></script>
-  
 </head>
 <body>
   <!-- Custom Cursor -->
@@ -26,18 +25,17 @@
   <!-- Header -->
   <header>
     <div class="logo">&lt;HACKtoLEARN/&gt;</div>
-    <!-- In the header nav section, replace the existing Devfolio button with: -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#tracks">Tracks</a>
-  <a href="#prizes">Prizes</a>
-  <a href="#teams">Teams</a>
-  <a href="#sponsors">Sponsors</a>
-  <a href="#organizer">Organizers</a>
-  <a href="#judges">Judges</a>
-  <a href="#faq">FAQ</a>
-</nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#prizes">Prizes</a>
+      <a href="#teams">Teams</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#organizer">Organizers</a>
+      <a href="#judges">Judges</a>
+      <a href="#faq">FAQ</a>
+    </nav>
   </header>
 
   <!-- Home / Hero -->
@@ -45,40 +43,37 @@
     <h1 class="glitch">HACKtoLEARN</h1>
     <p class="hero-subtitle">15 DECEMBER, 2025 | Virtual </p>
 
-    <div class="countdown" id="countdown">
+    <div class="countdown" id="countdown" aria-live="polite">
       <div class="countdown-item">
-        <div class="countdown-value" id="days">35</div>
+        <div class="countdown-value" id="days">--</div>
         <div class="countdown-label">DAYS</div>
       </div>
       <div class="countdown-item">
-        <div class="countdown-value" id="hours">00</div>
+        <div class="countdown-value" id="hours">--</div>
         <div class="countdown-label">HOURS</div>
       </div>
       <div class="countdown-item">
-        <div class="countdown-value" id="minutes">00</div>
+        <div class="countdown-value" id="minutes">--</div>
         <div class="countdown-label">MINUTES</div>
       </div>
       <div class="countdown-item">
-        <div class="countdown-value" id="seconds">00</div>
+        <div class="countdown-value" id="seconds">--</div>
         <div class="countdown-label">SECONDS</div>
       </div>
     </div>
 
-   <!-- In the hero section, keep the apply button as is -->
-<div class="cta-buttons">
-  <!-- <div 
-    class="apply-button" 
-    data-hackathon-slug="hack-to-learn" 
-    data-button-theme="light"
-    style="height: 60px; width: 312px;"
-  ></div> -->
-  <a href="https://unstop.com/o/ZPqzAvF?lb=a1Lvbnaz&utm_medium=Share&utm_source=amitcha64948&utm_campaign=Online_coding_challenge" target="_blank">
-          <button class="btn btn-secondary">Apply Now</button>
-  </a>
-  <a href="https://discord.gg/kUBXZTcusc" target="_blank">
-    <button class="btn btn-secondary">JOIN DISCORD</button>
-  </a>
-</div>
+    <!-- Message shown after countdown ends -->
+    <div id="countdownMessage" style="display:none; margin-top:12px; font-weight:700; color:#9ae6b4;"></div>
+
+    <!-- CTA Buttons -->
+    <div class="cta-buttons">
+      <a href="https://unstop.com/o/ZPqzAvF?lb=a1Lvbnaz&utm_medium=Share&utm_source=amitcha64948&utm_campaign=Online_coding_challenge" target="_blank">
+        <button class="btn btn-secondary">Apply Now</button>
+      </a>
+      <a href="https://discord.gg/kUBXZTcusc" target="_blank">
+        <button class="btn btn-secondary">JOIN DISCORD</button>
+      </a>
+    </div>
 
     <div class="terminal" aria-label="terminal">
       <div class="terminal-line">&gt; initializing_hackathon...</div>
@@ -255,7 +250,6 @@
         <p class="team-project">........</p>
         <div class="team-score">........</div>
       </div>
-      
     </div>
   </section>
 
@@ -336,7 +330,7 @@
     </div>
   </section>
 
-  <!-- <!-- Organizers Section -->
+  <!-- Organizers Section -->
 <section class="team-section" id="organizer">
   <h2 class="section-title">ORGANIZERS</h2>
   <div class="team-grid">
@@ -366,165 +360,9 @@
   </div>
 </section>
 
-  <!-- Coordinators Section - Compact Version --> -->
-<!-- <section class="team-section" id="coordinator">
-  <h2 class="section-title">COORDINATORS</h2>
-  
-  <!-- Design Team -->
-  <!-- <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Design Team</h3>
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-photo">YS</div>
-      <h3 class="member-name">Yashika Sharma</h3>
-      <p class="member-role">Design Lead</p>
-      <p class="member-bio">Creative designer specializing in digital assets.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">RR</div>
-      <h3 class="member-name">Rani Rajput</h3>
-      <p class="member-role">Design Team</p>
-      <p class="member-bio">Expert in Canva, Figma, and Photoshop.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">VK</div>
-      <h3 class="member-name">Vinay Kumar</h3>
-      <p class="member-role">Design Team</p>
-      <p class="member-bio">Ensures timely delivery of design materials.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Technical Team -->
-  <!-- <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Technical Team</h3>
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-photo">AM</div>
-      <h3 class="member-name">Anshu Mishra</h3>
-      <p class="member-role">Technical Coordinator</p>
-      <p class="member-bio">Collaborates with dev teams for smooth execution.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">GG</div>
-      <h3 class="member-name">Gaurav Gupta</h3>
-      <p class="member-role">Technical Coordinator</p>
-      <p class="member-bio">Plans and executes workshops and hackathons.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">AS</div>
-      <h3 class="member-name">Anant Singh</h3>
-      <p class="member-role">Technical Coordinator</p>
-      <p class="member-bio">Builds innovative technical solutions.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Community Managers -->
-  <!-- <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Community Managers</h3>
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-photo">AS</div>
-      <h3 class="member-name">Ananya Singh</h3>
-      <p class="member-role">Community Manager</p>
-      <p class="member-bio">Leadership and marketing expert.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">VU</div>
-      <h3 class="member-name">Vikram Ustav</h3>
-      <p class="member-role">Community Manager</p>
-      <p class="member-bio">Builds strong student communities.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">VS</div>
-      <h3 class="member-name">Vivek Sahani</h3>
-      <p class="member-role">Community Manager</p>
-      <p class="member-bio">Engages students through social media.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">MS</div>
-      <h3 class="member-name">Mansi Singh</h3>
-      <p class="member-role">Community Manager</p>
-      <p class="member-bio">Collects feedback to enhance participation.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Partnership Team -->
-  <!-- <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Partnership Team</h3>
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-photo">AY</div>
-      <h3 class="member-name">Aditi Yadav</h3>
-      <p class="member-role">Partnership Lead</p>
-      <p class="member-bio">Google Student Ambassador, KIT.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-    <div class="team-member">
-      <div class="member-photo">AS</div>
-      <h3 class="member-name">Aditi Singh</h3>
-      <p class="member-role">Partnership Team</p>
-      <p class="member-bio">President of NEC Team, IIT Bombay.</p>
-      <div class="member-connect">
-        <a href="#" target="_blank" class="connect-btn">
-          <span>Connect</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>  --> 
   <!-- Judges Section -->
 <section class="judges-section" id="judges">
-  <h2 class="section-title glitch">⚖️ ESTEEMED JUDGES</h2>
+  <h2 class="section-title glitch">⚖ ESTEEMED JUDGES</h2>
   <div class="judges-grid">
     
     <div class="judge-card">
@@ -558,7 +396,6 @@
         <span class="expertise-tag">ML</span>
         <span class="expertise-tag"> Blockchain (HIVE)</span>
       </div>
-      <div class="judge-connect">
       <div class="judge-connect">
         <a href="https://www.linkedin.com/in/sanchay-naresh-gupta-b454902a8/" target="_blank" class="connect-btn judge-btn">
           <span>Connect</span>
@@ -697,33 +534,77 @@
       drawParticles();
     })();
 
-    // Countdown (to 22 November 2025)
+    // ===== FIXED COUNTDOWN (TARGET: 15 DEC 2025) =====
     (function(){
-      const targetDate = new Date('2025-11-22T00:00:00').getTime();
+      // NOTE: monthIndex 11 = December
+      // Set the exact local time you want the hackathon to start. Currently: 15 Dec 2025 00:00:00 local time.
+      const target = new Date(2025, 11, 15, 0, 0, 0);
 
-      function updateCountdown() {
-        const now = Date.now();
-        const distance = targetDate - now;
+      const daysEl = document.getElementById('days');
+      const hoursEl = document.getElementById('hours');
+      const minutesEl = document.getElementById('minutes');
+      const secondsEl = document.getElementById('seconds');
+      const messageEl = document.getElementById('countdownMessage');
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      let intervalId = null;
 
-        const ds = String(days).padStart(2, '0');
-        const hs = String(hours).padStart(2, '0');
-        const ms = String(minutes).padStart(2, '0');
-        const ss = String(seconds).padStart(2, '0');
-
-        document.getElementById('days').textContent = ds;
-        document.getElementById('hours').textContent = hs;
-        document.getElementById('minutes').textContent = ms;
-        document.getElementById('seconds').textContent = ss;
+      function pad(n) {
+        return String(n).padStart(2, '0');
       }
 
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
+      function update() {
+        const now = new Date();
+        let diff = target.getTime() - now.getTime(); // ms
+
+        // If time has passed or diff <= 0, clamp to zero and show message once
+        if (diff <= 0) {
+          // clear interval if running
+          if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+          }
+          daysEl.textContent = '0';
+          hoursEl.textContent = '00';
+          minutesEl.textContent = '00';
+          secondsEl.textContent = '00';
+
+          messageEl.style.display = 'block';
+          messageEl.textContent = 'Hackathon started — all the best! 🎉';
+          return;
+        }
+
+        const sec = 1000;
+        const min = sec * 60;
+        const hr  = min * 60;
+        const day = hr  * 24;
+
+        const days = Math.floor(diff / day);
+        diff = diff - (days * day);
+
+        const hours = Math.floor(diff / hr);
+        diff = diff - (hours * hr);
+
+        const minutes = Math.floor(diff / min);
+        diff = diff - (minutes * min);
+
+        const seconds = Math.floor(diff / sec);
+
+        daysEl.textContent = String(days);
+        hoursEl.textContent = pad(hours);
+        minutesEl.textContent = pad(minutes);
+        secondsEl.textContent = pad(seconds);
+      }
+
+      // initial update and safe interval
+      update();
+      intervalId = setInterval(update, 1000);
+
+      // Extra safety: if target is within same second but interval didn't run, ensure we clamp after visibility change
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) update();
+      });
     })();
+    // ===== END COUNTDOWN =====
 
     // Track Filtering
     (function(){
@@ -799,34 +680,21 @@
     })();
 
     // Fallback for Devfolio SDK
-window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    const applyButtons = document.querySelectorAll('.apply-button');
-    applyButtons.forEach(button => {
-      if (!button.querySelector('iframe')) {
-        // SDK didn't load, show fallback button
-        button.innerHTML = `
-          <a href="https://devfolio.co/discover" target="_blank">
-            <button class="btn btn-primary">Apply with Devfolio</button>
-          </a>
-        `;
-      }
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const applyButtons = document.querySelectorAll('.apply-button');
+        applyButtons.forEach(button => {
+          if (!button.querySelector('iframe')) {
+            // SDK didn't load, show fallback button
+            button.innerHTML = `
+              <a href="https://devfolio.co/discover" target="_blank">
+                <button class="btn btn-primary">Apply with Devfolio</button>
+              </a>
+            `;
+          }
+        });
+      }, 3000);
     });
-  }, 3000);
-});
-    
   </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
