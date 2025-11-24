@@ -364,6 +364,26 @@
   </div>
 </section>
 
+   <!-- Coordinators Section - Compact Version -->
+<section class="team-section" id="coordinator">
+  <h2 class="section-title">COORDINATORS</h2>
+  
+  <!-- Design Team -->
+  <h3 style="color: #ff00ff; margin: 30px 0 20px; text-align: center;">Design Team</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">YS</div>
+      <h3 class="member-name">Yashika Sharma</h3>
+      <p class="member-role">Design Lead</p>
+      <p class="member-bio">Creative designer specializing in digital assets.</p>
+      <div class="member-connect">
+        <a href="#" target="_blank" class="connect-btn">
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+    
+  </section>
   <!-- Judges Section -->
 <section class="judges-section" id="judges">
   <h2 class="section-title glitch">⚖ ESTEEMED JUDGES</h2>
@@ -683,6 +703,23 @@
       });
     })();
     });
+    // Fallback for Devfolio SDK
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const applyButtons = document.querySelectorAll('.apply-button');
+    applyButtons.forEach(button => {
+      if (!button.querySelector('iframe')) {
+        // SDK didn't load, show fallback button
+        button.innerHTML = `
+          <a href="https://devfolio.co/discover" target="_blank">
+            <button class="btn btn-primary">Apply with Devfolio</button>
+          </a>
+        `;
+      }
+    });
+  }, 3000);
+});
   </script>
 </body>
 </html>
+
